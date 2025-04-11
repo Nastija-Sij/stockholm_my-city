@@ -1,14 +1,18 @@
 :root {
   --primary-color: #768393;
   --secondary-color: #586352;
+  --secondary-color-light: #87987e;
   --color-background: #f5f5f5;
-  --text-body-color-: #333333;
-  --text-heading-color-: #333333;
+  --text-body-color: #333333;
+  --text-heading-color: #333333;
   --color-border: #cccccc;
   --font-family-body: "Releway", sans-serif;
   --font-family-heading: "Italiana", sans-serif;
   --font-size: 16px;
   --line-height: 1.5;
+}
+body {
+  margin: 0 0;
 }
 h1 {
   font-family: var(--font-family-heading);
@@ -35,12 +39,20 @@ header {
 }
 button {
   margin-top: 30px;
-  padding: 12px 24px;
+  padding: 10px 20px;
+  border: none;
   border-radius: 7px;
   font-family: var(--font-family-body);
+  background-color: var(--secondary-color);
+  box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.496);
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
 }
 button:hover {
-  background-color: var(--secondary-color);
-  color: white;
+  background-color: var(--secondary-color-light);
+  color: var(--text-body-color);
   cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  transform: scale(1.01);
 }
