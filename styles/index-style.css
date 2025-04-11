@@ -6,14 +6,17 @@
   --text-body-color: #333333;
   --text-heading-color: #333333;
   --color-border: #cccccc;
-  --font-family-body: "Releway", sans-serif;
+  --font-family-body: "Inter", sans-serif;
   --font-family-heading: "Italiana", sans-serif;
   --font-size: 16px;
   --line-height: 1.5;
 }
 body {
-  margin: 0 0;
+  margin: 0px 0px; 
 }
+.container {
+  flex: 1; /*that way the footer will stay to tbe bottom if there isnt much content*/
+} 
 h1 {
   font-family: var(--font-family-heading);
   font-size: 128px;
@@ -55,4 +58,46 @@ button:hover {
   cursor: pointer;
   transition: all 0.15s ease-in-out;
   transform: scale(1.01);
+}
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.808)),
+    url("/img/homepage/panorama.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.footer-columns {
+  display: grid;
+  grid-template-columns: 2fr 5fr 3fr;
+  gap: 30px;
+  padding: 20px 50px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.footer-websites {
+  line-height: 30px;
+}
+.footer-links {
+  text-decoration: none;
+  color: white;
+}
+.footer-p {
+  font-family: var(--font-family-body);
+  font-weight: 100;
+  line-height: 24px;
+}
+.footer-headings {
+  font-family: var(--font-family-heading);
+  font-size: 18px;
+  font-weight: 200;
+}
+.footer-signature {
+  font-family: var(--font-family-body);
+  font-weight: 100;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
 }
