@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #768393;
+  --secondary-color: #586352;
+  --color-background: #f5f5f5;
+  --text-body-color-: #333333;
+  --text-heading-color-: #333333;
+  --color-border: #cccccc;
+  --font-family-body: "Releway", sans-serif;
+  --font-family-heading: "Italiana", sans-serif;
+  --font-size: 16px;
+  --line-height: 1.5;
+}
+h1 {
+  font-family: var(--font-family-heading);
+  font-size: 128px;
+  color: white;
+  font-weight: 500;
+  margin: 20px auto;
+}
+h3 {
+  font-family: var(--font-family-heading);
+  font-size: 32px;
+  color: white;
+  font-weight: 300;
+  margin: 0px auto;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
+    url("/img/homepage/panorama.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 240px 0;
+}
+button {
+  margin-top: 30px;
+  padding: 12px 24px;
+  border-radius: 7px;
+  font-family: var(--font-family-body);
+}
+button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  cursor: pointer;
+}
