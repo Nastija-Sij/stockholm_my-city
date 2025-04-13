@@ -12,11 +12,11 @@
   --line-height: 1.5;
 }
 body {
-  margin: 0px 0px; 
+  margin: 0px 0px;
 }
 .container {
   flex: 1; /*that way the footer will stay to tbe bottom if there isnt much content*/
-} 
+}
 h1 {
   font-family: var(--font-family-heading);
   font-size: 128px;
@@ -24,12 +24,27 @@ h1 {
   font-weight: 500;
   margin: 20px auto;
 }
+
 h3 {
   font-family: var(--font-family-heading);
   font-size: 32px;
   color: white;
   font-weight: 300;
   margin: 0px auto;
+}
+h4 {
+  font-family: var(--font-family-heading);
+  font-size: 32px;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  margin: 20px auto;
+}
+h6 {
+  font-family: var(--font-family-heading);
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  margin: 10px auto;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
@@ -69,6 +84,13 @@ footer {
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
+p {
+  font-family: var(--font-family-body);
+  font-size: 16px;
+  color: var(--text-body-color);
+  line-height: var(--line-height);
+  margin: 0px auto;
+}
 .footer-columns {
   display: grid;
   grid-template-columns: 2fr 5fr 3fr;
@@ -88,6 +110,7 @@ footer {
   font-family: var(--font-family-body);
   font-weight: 100;
   line-height: 24px;
+  color:white
 }
 .footer-headings {
   font-family: var(--font-family-heading);
@@ -100,4 +123,56 @@ footer {
   text-align: center;
   padding-bottom: 20px;
   margin-bottom: 0px;
+  color: white;
+}
+.intro-stockholm {
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 130px auto;
+
+}
+.square-picture-sunset {
+  width: 100%;
+
+  
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 64px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .square-picture-sunset{
+    max-width: 70%;
+  }
+  .footer-columns {
+    grid-template-columns: 1fr;
+    padding: 0px 20px;
+  }
+  .intro-stockholm {
+    grid-template-columns: 1fr;
+    margin: 50px 30px;
+  }
+.footer-columns {
+    grid-template-columns: 1fr;
+    padding: 0px 20px;
+  }
+  .footer-websites {
+    line-height: 20px;
+  }
+  .footer-headings {
+    font-size: 16px;
+  }
+  .footer-p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .footer-signature {
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+  }
 }
