@@ -60,10 +60,13 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 240px 0;
+  padding: 240px 0 ;
+
+}
+.under-title {
+margin-bottom: 30px;
 }
 .btn-header {
-  margin-top: 30px;
   padding: 10px 20px;
   border: none;
   border-radius: 7px;
@@ -73,6 +76,7 @@ header {
   color: white;
   font-weight: 300;
   font-size: 12px;
+  text-decoration: none;
 }
 .btn-header:hover {
   background-color: var(--secondary-color-light);
@@ -98,8 +102,11 @@ p {
   line-height: var(--line-height);
   margin: 0px auto;
 }
-.kannelbuller-section {
+.kanelbuller-section {
   margin: 50px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .kanelbullar-title {
   text-align: center;
@@ -157,8 +164,9 @@ p {
   align-items: center;
 }
 .btn-more-bakeries {
-  margin: 20px auto;
-  display: block;
+   text-align: center;
+   text-decoration: none;
+   margin: 20px auto;
   padding: 10px 20px;
   border: none;
   border-radius: 7px;
